@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,>
+    <title>Kanzyra AI</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+
+<div class="app">
+
+    <header>
+        <h1>🤖 Kanzyra AI</h1>
+        <p>Your AI Assistant</p>
+    </header>
+
+    <div id="chat"></div>
+
+    <div class="input-area">
+
+        <textarea
+            id="question"
+            placeholder="Message Kanzyra..."
+            rows="1">
+        </textarea>
+
+        <button onclick="askAI()">➤</button>
+
+    </div>
+
+    <button class="clear-btn" onclick="clearChat()">
+        🗑️ Clear Chat
+    </button>
+
+</div>
+
+<script src="/static/script.js"></script>
+
+</body>
+</html>
