@@ -37,7 +37,7 @@ async function askAI() {
 
         const data = await response.json();
 
-        aiMessage.innerText = data.answer;
+        aiMessage.innerText = marked.parse(data.answer);
 
         chat.scrollTop = chat.scrollHeight;
 
