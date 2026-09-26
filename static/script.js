@@ -1,5 +1,5 @@
 async function askAI() {
-    const questionBox = document.getElementById("quest>
+    const questionBox = document.getElementById("question");
     const chat = document.getElementById("chat");
 
     const question = questionBox.value.trim();
@@ -42,16 +42,16 @@ async function askAI() {
         chat.scrollTop = chat.scrollHeight;
 
     } catch (error) {
-        aiMessage.innerText = "❌ Something went wrong>
+        aiMessage.innerText = "❌ Something went wrong.";
     }
 }
+
 function clearChat() {
     document.getElementById("chat").innerHTML = "";
     document.getElementById("question").value = "";
 }
 
-
-document.getElementById("question").addEventListener(">
+document.getElementById("question").addEventListener("keydown", function(event) {
     if (event.key === "Enter" && !event.shiftKey) {
         event.preventDefault();
         askAI();
