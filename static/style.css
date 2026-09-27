@@ -142,8 +142,8 @@ header p {
 /* AI Answer Formatting */
 
 .message.ai p {
-    margin: 0 0 12px 0;
-    line-height: 1.6;
+    margin: 0 0 6px 0;
+    line-height: 1.5;
 }
 
 .message.ai p:last-child {
@@ -153,7 +153,7 @@ header p {
 .message.ai h1,
 .message.ai h2,
 .message.ai h3 {
-    margin: 16px 0 8px 0;
+    margin: 10px 0 5px 0;
 }
 
 .message.ai ul,
@@ -163,7 +163,7 @@ header p {
 }
 
 .message.ai li {
-    margin-bottom: 6px;
+    margin-bottom: 3px;
 }
 
 .message.ai strong {
