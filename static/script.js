@@ -38,6 +38,27 @@ async function askAI() {
         const data = await response.json();
 
         aiMessage.innerHTML= marked.parse(data.answer);
+        aiMessage.querySelectorAll("pre").forEach((pre) => {
+    const button = document.createElement("button");
+
+    button.innerText = "Copy";
+    button.className = "copy-code-btn";
+
+    button.addEventListener("click", async () => {
+        const code = pre.querySelector("code");
+        if (!code) return;
+
+        await navigator.clipboard.writeText(code.innerText);
+
+        button.innerText = "Copied!";
+
+        setTimeout(() => {
+            button.innerText = "Copy";
+        }, 1500);
+    });
+
+    pre.appendChild(button);
+});
 
         chat.scrollTop = chat.scrollHeight;
 
