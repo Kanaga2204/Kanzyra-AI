@@ -193,10 +193,24 @@ header p {
 }
 
 .message.ai table {
-    width: 100%;
+    width: max-content;
+    min-width: 100%;
     border-collapse: collapse;
-    margin: 12px 0;
-    overflow-x: auto;
+    margin: 8px 0;
+}
+
+.message.ai th,
+.message.ai td {
+    border: 1px solid #ccc;
+    padding: 8px 10px;
+    text-align: left;
+    white-space: nowrap;
+    vertical-align: top;
+}
+
+.message.ai th {
+    font-weight: bold;
+}
 }
 
 .message.ai th,
