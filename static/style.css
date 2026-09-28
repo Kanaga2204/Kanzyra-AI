@@ -98,6 +98,7 @@ header p {
     height: 46px;
     max-height: 120px;
     resize: none;
+    overflow-y: auto;
 
     padding: 12px 15px;
     border: 1px solid #ddd;
