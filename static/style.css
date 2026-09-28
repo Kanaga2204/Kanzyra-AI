@@ -224,3 +224,15 @@ header p {
 .message.ai th {
     font-weight: bold;
 }
+.copy-code-btn {
+    position: absolute;
+    top: 6px;
+    right: 6px;
+    padding: 5px 10px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background: white;
+    color: #333;
+    font-size: 12px;
+    cursor: pointer;
+    }
